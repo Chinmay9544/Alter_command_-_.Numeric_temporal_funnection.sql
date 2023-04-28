@@ -1,0 +1,31 @@
+
+------ALTER STATEMENT ---------------------
+
+
+alter table course Add Teacher_Nmae varchar(50);
+
+update course  set teacher_nmae = 'pankaj' where course_id = 1;
+ 
+ alter table course modify column teacher_nmae varchar(100);
+ 
+ alter table course rename column teacher_nmae To Name_Of_Teacher;
+ 
+ alter table course drop Name_Of_Teacher;
+
+ ---NUMERIC & TEMPORAL FUNNECTION ------------------------
+
+ SELECT ROUND(56.4);
+SELECT ROUND(1/3,2);
+SELECT CEIL(58.2);
+select FLOOR(58.9);
+select ABS(-45);
+
+select NOW();
+select DATE(NOW());
+select MONTH(NOW());
+select YEAR(NOW());
+select MIN(NOW());
+
+select NOW(),date_format(NOW(),'%Y **%M **%D');
+SELECT date_add(now(), interval 30 day);
+select datediff(now(),'2023-01-01');
